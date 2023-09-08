@@ -6,7 +6,7 @@ let myNumber = 7;
 
 //alert("Hello, I am an ALERT!");
 
-/*==== PROMPT =======*/
+/*==== CONFIRM =======*/
 
 // let userChoice = confirm("Wait! Don't leave yet! Can I chat with you!");
 //
@@ -16,3 +16,5 @@ let myNumber = 7;
 // } else {
 //     console.log("boo");
 // }
+
+/*==== PROMPT =======*/
