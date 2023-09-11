@@ -26,13 +26,13 @@
 //
 // alert(`It is ${studentCanEnroll} that you can enroll in this class.`)
 
-let personBoughtMoreThanTwoItems = confirm("Did the person buy more than two items?");
-let offerHasExpired = confirm("Has the offer expired?");
-let premiumMember = confirm("Is the person a premium member?")
-
-let productOfferCanBeApplied =(personBoughtMoreThanTwoItems || premiumMember) && !offerHasExpired;
-
-alert(`It is ${productOfferCanBeApplied} that we can apply the offer.`);
+// let personBoughtMoreThanTwoItems = confirm("Did the person buy more than two items?");
+// let offerHasExpired = confirm("Has the offer expired?");
+// let premiumMember = confirm("Is the person a premium member?")
+//
+// let productOfferCanBeApplied =(personBoughtMoreThanTwoItems || premiumMember) && !offerHasExpired;
+//
+// alert(`It is ${productOfferCanBeApplied} that we can apply the offer.`);
 
 
 
