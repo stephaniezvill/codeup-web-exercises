@@ -9,9 +9,8 @@
  * > sayHello("codeup") // returns "Hello, codeup!"
  */
 function sayHello (name){
-    return ("Hello," + name + "!")
+    return `Hello, ${name}`;
 }
-console.log(sayHello());
 
 /**
  * TODO:
@@ -20,7 +19,7 @@ console.log(sayHello());
  *
  * console.log 'helloMessage' to check your work
  */
-let helloMessage = sayHello("Stephanie");
+const helloMessage = sayHello("Stephanie");
 console.log(helloMessage);
 
 /**
@@ -55,8 +54,7 @@ const random = Math.floor((Math.random() * 3) + 1);
  * number)
  */
 function isTwo(number){
-    let Two =2;
-    return === number;
+    return number === 2 ;
 }
 console.log(isTwo(random));
 
@@ -71,11 +69,9 @@ console.log(isTwo(random));
  * > calculateTip(0.25, 25.50) // returns 6.375
  * > calculateTip(0.15, 33.42) // returns 5.013
  */
-function calculateTip(bill){
-    let tip = bill * .20;
-    return tip;
+function calculateTip(tipPercentage, totalBill){
+    return totalBill * tipPercentage;
 }
-console.log(calculateTip(10));
 
 /**
  * TODO:
@@ -83,8 +79,11 @@ console.log(calculateTip(10));
  * prompt the user for the bill total and a percentage they would like to tip,
  * then display the dollar amount they should tip
  */
-let bill= prompt ("What is your total bill?");
-alert(calculateTip(bill))
+
+const billTotal = prompt("What is your total bill?");
+const percentageToTip = prompt("what percentage would you like to tip?");
+alert(`You should tip ${calculateTip(percentageToTip/100, billTotal)}`);
+
 /**
  * TODO:
  * Create a function named `applyDiscount`. This function should accept a price
@@ -99,8 +98,7 @@ alert(calculateTip(bill))
  *
  * > applyDiscount(45.99, 0.12) // 40.4712
  */
-function applyDiscount (originalPrice, discountPercent){
-    let totalPrice = originalPrice * discountPercent;
-    return (totalPrice);
+function applyDiscount (price, discountPercent){
+    return price - price * discountPercent;
 }
-console.log(applyDiscount(originalPrice, discountPercent))
+
