@@ -47,21 +47,16 @@
 //     This `getToDestination` should not return any value, but rather console log based on the conditions met.
 //
 // ---
-    function getToDestination (age && isInsured && hasCar && canGetRideshare) {
-        if "age" >= 21 {
-            return "rider can get to destination"
-        } else if "rider can't reach destination"
-            if isInsured {
-                return "rider can get to destination"
-            } else if "rider can't reach destination"
-                if hasCar {
-                    return "rider can get to destination"
-                } else if  "rider can't reach destination"
-                    if canGetRideshare {
-                        return "rider can get to destination"
-                    } else if "rider can't reach destination"
+    function getToDestination (age, isInsured, hasCar, canGetRideshare) {
+        if (age >= 16 && isInsured && hasCar) {
+            console.log("This person can use their own car!");
+        } else if ((age < 16 || !isInsured || !hasCar) && canGetRideshare) {
+        console.log("This person can get a rideshare");
+        }
+    } else {
+    console.log ("This person should call a friend for a ride.")
+}
 
-    }
 
 
 // #### getToDestination, part 2
