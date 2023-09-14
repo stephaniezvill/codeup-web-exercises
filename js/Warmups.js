@@ -52,8 +52,7 @@
             console.log("This person can use their own car!");
         } else if ((age < 16 || !isInsured || !hasCar) && canGetRideshare) {
         console.log("This person can get a rideshare");
-        }
-    } else {
+        }else {
     console.log ("This person should call a friend for a ride.")
 }
 
