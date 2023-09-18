@@ -47,14 +47,14 @@
 //     This `getToDestination` should not return any value, but rather console log based on the conditions met.
 //
 // ---
-    function getToDestination (age, isInsured, hasCar, canGetRideshare) {
-        if (age >= 16 && isInsured && hasCar) {
-            console.log("This person can use their own car!");
-        } else if ((age < 16 || !isInsured || !hasCar) && canGetRideshare) {
-        console.log("This person can get a rideshare");
-        }else {
-    console.log ("This person should call a friend for a ride.")
-}
+//     function getToDestination (age, isInsured, hasCar, canGetRideshare) {
+//         if (age >= 16 && isInsured && hasCar) {
+//             console.log("This person can use their own car!");
+//         } else if ((age < 16 || !isInsured || !hasCar) && canGetRideshare) {
+//         console.log("This person can get a rideshare");
+//         }else {
+//     console.log ("This person should call a friend for a ride.")
+// }
 
 
 
@@ -103,3 +103,28 @@
 //         - After all switch statement functions successfully return the user's input, concatenate them all into a nicely-formatted string and return all data to the user
 //
 //
+// Practice Exam
+//subtract(a,b)
+//write a function called subtract that takes 2 numbers and returns the first # minus the second #
+function subtract(a,b) {
+    //returns a - b;
+    // if(typeof a !== "number"){
+    //     return false;
+    // }
+    return a- b;
+}
+
+//write a function called cube that takes a number and returns the cube of that number
+function cube(a) {
+    return a * a * a;
+}
+
+// write a function called isGreaterThan that takes 2 numbers and returns true if the first number is greater than the ssecond number
+function isGreaterThan(a,b) {
+    //true if a > b
+    if (a > b) {
+        return true;
+    } else {
+        return false;
+    }
+}

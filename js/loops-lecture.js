@@ -64,7 +64,7 @@
 //     console.log("for loop:" + i);
 // }
 // console.log("Done")
-
+//
 // for (let i = 1; i < 100; i++) {
 //
 //     if (i % 2 !== 0) { // if i is odd
@@ -109,14 +109,7 @@
 //         console.log("loop iteration i = " + i);
 //     }
 // }
-//
-// console.log("Done");
-//
-// let i = 5;
-// let iString = ""+i;
-// console.log(iString.repeat(5));
-//
-// let upperBound = 201;
-// let lowerBound = 20;
-//  let a = Math.trunc(Math.random() * (upperBound - lowerBound));
-//  console.log(a);
+//console.log("Done");
+// function getRandomInt(min,max) {
+//     return Math.floor(Math.random() * (max - min) + min)
+// }
