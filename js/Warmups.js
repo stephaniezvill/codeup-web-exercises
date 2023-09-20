@@ -107,10 +107,10 @@
 //subtract(a,b)
 //write a function called subtract that takes 2 numbers and returns the first # minus the second #
 function subtract(a,b) {
-    //returns a - b;
-    // if(typeof a !== "number"){
-    //     return false;
-    // }
+    returns a - b;
+    if(typeof a !== "number"){
+        return false;
+    }
     return a- b;
 }
 

@@ -9,12 +9,13 @@
      *  > console.log(person.firstName) // "Rick"
      *  > console.log(person.lastName) // "Sanchez"
      */
-
- //    let person = {
- //        firstName: "Stephanie" ,
- //        lastName: "Villarreal"
- //    };
- // console.log (person)
+    //
+    // const person = {
+    //     firstName: "Stephanie" ,
+    //     lastName: "Villarreal"
+    // };
+    // console.log (person.firstName)
+    // console.log (person.lastName)
     /**
      * TODO:
      * Add a sayHello method to the person object that returns a greeting using
@@ -24,9 +25,9 @@
      * Example
      * > console.log(person.sayHello()) // "Hello from Rick Sanchez!"
      */
-    //
+
     // person.sayHello = function () {
-    //     return "Hello from " +  this.firstName + " " + this.lastName + "!" ;
+    //     return `Hello from ${this.firstName} ${this.lastName}!` ;
     // }
     // console.log (person.sayHello());
 
@@ -43,23 +44,24 @@
      * represents one shopper. Use a foreach loop to iterate through the array,
      * and console.log the relevant messages for each person
      */
-
-    // let shoppers = [
+    //
+    // const shoppers = [
     //     {name: 'Cameron', amount: 180},
     //     {name: 'Ryan', amount: 250},
     //     {name: 'George', amount: 320}
     // ];
-    // function discountAmount(shoppers) {
-    //     shoppers.forEach(function(shoppers) {
-    //         if (shoppers.amount >= 200) {
-    //             let discount = (shoppers.amount * 0.12).toFixed(2);
-    //             console.log(shoppers.name + " has already spent  $" + shoppers.amount.toFixed(2) + " today. They qualify for a 12% discount " + discount + ", and therfore they will only pay $(shoppers.amount - discount) + ".")
-    //         } else {
-    //             console.log(shoppers.name + ", thank you for your total today is: $" + shoppers.amount.toFixed(2));
-    //         }
-    //     });
-    // }
-    // discountAmount(shoppers);
+//     function discountAmount(shoppers) {
+//         shoppers.forEach(function(shoppers) {
+//             if (shoppers.amount >= 200) {
+//                 let discount = (shoppers.amount * 0.12).toFixed(2);
+//                 console.log(shoppers.name + " has already spent  $" + shoppers.amount.toFixed(2) + " today. They qualify for a 12% discount " + discount + ", and therfore they will only pay $(shoppers.amount - discount).
+//             } else {
+//                 console.log(shoppers.name + ", thank you for your total today is: $" + shoppers.amount.toFixed(2));
+//             }
+//         });
+//     }
+//     discountAmount(shoppers);
+//
 
     /** TODO:
      * Create an array of objects that represent books and store it in a
@@ -151,9 +153,9 @@
      *      ...
      */
 
-    function bookInfo (booksArray) {
-        for (let i = 0; i < booksArray.length; i++) {
-            let books = booksArray[i];
+    function bookInfo (book) {
+        for (let i = 0; i < book.length; i++) {
+            let books = book[i];
             console.log("Books # " + (i + 1));
             console.log("Title: " + books.title);
             console.log("Author: " + books.author.firstName + " " + books.author.lastName);
