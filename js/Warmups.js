@@ -106,25 +106,36 @@
 // Practice Exam
 //subtract(a,b)
 //write a function called subtract that takes 2 numbers and returns the first # minus the second #
-function subtract(a,b) {
-    returns a - b;
-    if(typeof a !== "number"){
-        return false;
-    }
-    return a- b;
-}
+// function subtract(a,b) {
+//     returns a - b;
+//     if(typeof a !== "number"){
+//         return false;
+//     }
+//     return a- b;
+// }
+//
+// //write a function called cube that takes a number and returns the cube of that number
+// function cube(a) {
+//     return a * a * a;
+// }
+//
+// // write a function called isGreaterThan that takes 2 numbers and returns true if the first number is greater than the ssecond number
+// function isGreaterThan(a,b) {
+//     //true if a > b
+//     if (a > b) {
+//         return true;
+//     } else {
+//         return false;
+//     }
+// }
 
-//write a function called cube that takes a number and returns the cube of that number
-function cube(a) {
-    return a * a * a;
-}
-
-// write a function called isGreaterThan that takes 2 numbers and returns true if the first number is greater than the ssecond number
-function isGreaterThan(a,b) {
-    //true if a > b
-    if (a > b) {
-        return true;
-    } else {
-        return false;
+function addressToObject(address) {
+    const streetNumber = address.split(` `, 1);
+    const indexOfFirstSpace = address.indexOf(` `);
+    const streetName = address.substring(indexOfFirstSpace + 1);
+    return {
+        streetNumber : streetNumber,
+        streetName : streetName
     }
+
 }
