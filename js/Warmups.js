@@ -129,13 +129,24 @@
 //     }
 // }
 
-function addressToObject(address) {
-    const streetNumber = address.split(` `, 1);
-    const indexOfFirstSpace = address.indexOf(` `);
-    const streetName = address.substring(indexOfFirstSpace + 1);
-    return {
-        streetNumber : streetNumber,
-        streetName : streetName
+// function addressToObject(address) {
+//     const streetNumber = address.split(` `, 1);
+//     const indexOfFirstSpace = address.indexOf(` `);
+//     const streetName = address.substring(indexOfFirstSpace + 1);
+//     return {
+//         streetNumber : streetNumber,
+//         streetName : streetName
+//     }
+//
+// }
+/* Write a function that accepts an array of numeric values and returns the average of those values. */
+function averageOfArrayNums(arrayOfNums) {
+    const numNums = arrayOfNums.length ;
+    let sum = 0;
+    for(let i = 0; i <arrayOfNums.length; i++) {
+        sum += arrayOfNums[i];
     }
-
+    return sum / numNums;
 }
+
+const arrayOfNums1 = [ 4, 10,8,9,7]
