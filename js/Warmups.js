@@ -140,13 +140,13 @@
 //
 // }
 /* Write a function that accepts an array of numeric values and returns the average of those values. */
-function averageOfArrayNums(arrayOfNums) {
-    const numNums = arrayOfNums.length ;
-    let sum = 0;
-    for(let i = 0; i <arrayOfNums.length; i++) {
-        sum += arrayOfNums[i];
-    }
-    return sum / numNums;
-}
-
-const arrayOfNums1 = [ 4, 10,8,9,7]
+// function averageOfArrayNums(arrayOfNums) {
+//     const numNums = arrayOfNums.length ;
+//     let sum = 0;
+//     for(let i = 0; i <arrayOfNums.length; i++) {
+//         sum += arrayOfNums[i];
+//     }
+//     return sum / numNums;
+// }
+//
+// const arrayOfNums1 = [ 4, 10,8,9,7]
