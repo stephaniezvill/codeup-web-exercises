@@ -65,7 +65,7 @@ ul.navigation > li > a {
 }
 
 ul.navigation > li > a:hover {
-    color: var (--primary-color);
+    color:(--primary-color)
 }
 
 ul.navigation > li > ul {
