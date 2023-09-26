@@ -11,20 +11,17 @@ body, html {
 }
 
 form {
-    padding: 1em;
     margin: 1em;
+    padding: 1em;
     /* This form should be separated from other elements by 1em */
     /* There must be 1em between the content and the border of this element */
 }
 
 fieldset {
-    -webkit-box-shadow: 10px 10px 5px 0 rgba(0,0,0,0.75);
-    -moz-box-shadow: 10px 10px 5px 0 rgba(0,0,0,0.75);
-    box-shadow: 10px 10px 5px 0 rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 5px rgba(0,0,0,0.75);
     padding: 1em;
     border: none;
     background-color: white;
-
     /* There must be 1em between the content and the border of this element */
     /* It should have no border */
     /* Its background should be white */
@@ -59,7 +56,7 @@ fieldset {
     padding: 8px;
     color: white;
     font-weight: bold;
-    border: 1px lightgray solid ;
+    border: 1px solid lightgray;
     background-color: #0fb784;
 
     /* There must be a separation of 8px between the text and the border of this element */
