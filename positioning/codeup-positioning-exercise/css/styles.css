@@ -11,7 +11,7 @@ body {
     padding: 45px 25px;
     width: calc(100% - 40px);
     max-width: 530px;
-    box-shadow: 0px 0px 104px -40px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 0 104px -40px rgba(0, 0, 0, 0.25);
     z-index: 1000;
 }
 
@@ -23,12 +23,12 @@ body {
 input {
     min-height: 55px;
     border: 1px solid #DDDFE1;
-    padding: 0px 10px;
+    padding: 0 10px;
     font-family: inherit;
     font-size: 15px;
 }
 
-input placeholder {
+input .placeholder {
     color: #ABAFB3;
 }
 
@@ -103,18 +103,25 @@ button.btn.btn-login {
     bottom: 400px;
     right: 20px;
 }
-button.cancel {
+.containerlogin {
+    width: 200px;
+    height: 200px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cancel {
     position: absolute;
     top: 180px;
     right: 475px;
-    box-shadow: 0px 0px 5px 2px rgba(185, 182, 182, 0.5);
     width: 50px;
     height: 50px;
     border: none;
-    border-radius: 50px;
-    background-color:white;
-    font-size: 18px;
+    box-shadow: 0 0 5px 2px rgba(185, 182, 182, 0.5);
+    border-radius: 50%;
+    background-color: white;
     font-weight: 600;
+    font-size: 18px;
     cursor: pointer;
-
 }
