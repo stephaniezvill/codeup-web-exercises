@@ -90,7 +90,7 @@ button.btn.btn-login {
 }
 #bottomWave {
     position: absolute;
-    bottom: 0;
+    bottom: -50px;
     right: 0;
 }
 #waveLines{
@@ -125,3 +125,14 @@ button.btn.btn-login {
     font-size: 18px;
     cursor: pointer;
 }
+ #register-info {
+     list-style: none;
+     display: flex;
+     justify-content: center;
+     gap: 20px;
+ }
+ #register-info a {
+     text-decoration: none;
+     font-weight: bolder;
+     color: #AA04F9;
+ }
