@@ -1,0 +1,87 @@
+/** {*/
+/*    box-sizing: border-box;*/
+/*}*/
+/*body {*/
+/*    margin: 0;*/
+/*}*/
+/*nav {*/
+/*    background: #808080;*/
+/*}*/
+/*ul {*/
+/*    display: flex;*/
+/*    list-style: none;*/
+/*    padding: 0;*/
+/*    margin: 0;*/
+/*}*/
+
+/*nav a {*/
+/*    text-decoration: none;*/
+/*    color: black;*/
+/*    font-family: 'Montserrat',Work Sans;*/
+/*    display: inline-block;*/
+/*    padding: 1em;*/
+
+/*}*/
+
+/*nav a:hover {*/
+/*    background: cornflowerblue;*/
+/*}*/
+
+/*.link menu {*/
+/*    display: flex;*/
+/*   align-items: center;*/
+/*}*/
+
+/*.logo {*/
+/*    font-size: 3em;*/
+/*    padding: .2em;*/
+/*    font-family: 'Montserrat',Work Sans;*/
+/*}*/
+
+* {
+    margin: 0;
+    font-family: 'Montserrat', WorkSans;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-family:'Montserrat', WorkSans;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+.menu {
+    background-color: lightgray;
+    display: flex;
+    justify-content: space-between;
+}
+
+.link menu {
+    display: flex;
+    align-items: center;
+}
+
+.link menu li {
+    height: 100%;
+}
+
+.link menu li a {
+    padding: 1.9em .5em;
+    display: inline-block;
+}
+
+.link menu a:hover {
+    color: blue;
+    background-color: cornflowerblue;
+}
+
+.logo {
+    font-size: 3em;
+    padding: .2em 0;
+    font-family: 'Montserrat', sans-serif;
+}
