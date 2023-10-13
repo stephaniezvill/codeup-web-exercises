@@ -4,12 +4,26 @@
   <title>Konami Code</title>
 </head>
 <body>
-<h1>Konami Code</h1>
+<h1 style="color: aqua; text-align: center">KONAMI CODE</h1>
 
 <script>
   "use strict";
 
-  document.addEventListener("keyup", event => console.log(event.key) );
+  document.addEventListener("keyup",event => console.log(event.key));
+  let keysPressed = " ";
+  let konamiCode =("ArrowUpArrowUpArrowDownArrowDownArrowLeftArrowRightArrowLeftArrowRightabEnter");
+
+  document.addEventListener("keyup", function (event) {
+    keysPressed += event.key;
+
+    if( keysPressed.includes(konamiCode)) {
+      let audio = new Audio('sounds/rain-sounds.mp3');
+      audio.play();
+      alert("You have added 30 lives!")
+      document.body.style.backgroundImage ="url('img/pexels-darius-krause-2609106.jpg')"
+    }
+  });
+
 </script>
 </body>
 </html>
