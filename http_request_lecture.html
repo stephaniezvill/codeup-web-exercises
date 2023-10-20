@@ -101,10 +101,19 @@ pokePromise.then(function(response) {
 
 
     // catch and finally
+    //start the spinner
+    console.log("start spinner");
     fetch("https://pokeapi.co/api/v2/pokemon/charmander")
         .then(response => response.json())
-        .then(pokeData => console.log(pokeData));
-         .cat;
+        .then(pokeData => console.log(pokeData))
+         .catch (error => {
+             console.log(error);
+         }).finally (function() {
+             //do something when the request id over
+            //successful or not
+            //like stop the spinner
+        console.log("stop spinner");
+    });
 
 
 
@@ -121,7 +130,15 @@ pokePromise.then(function(response) {
     // show POST options in textbook. point at Content-Type and body for POST/PUT/PATCH
 
     // make options for a GET request
-
+const options = {
+    method:"GET",
+    headers: {
+        "authorization": "who cares"
+    }
+}
+fetch('https://animation.xyz/api/random', options)
+    .then(response => response.json())
+    .then()
 
     // show github public apis
     // https://github.com/public-apis/public-apis
