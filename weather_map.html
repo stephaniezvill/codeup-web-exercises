@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Weather Map</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script src='https://api.mapbox.com/mapbox-gl-js/v2.9.0/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.9.0/mapbox-gl.css' rel='stylesheet' />
+    <link rel="stylesheet" href="css/weather.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar bg-secondary">
+    <div class="container-fluid">
+        <img src="img/photography (1).png" height="50" width="50"/><a class="navbar-brand" style="color: cornflowerblue" >Weather App</a>
+        <span class="city-name">Current city: San Antonio</span>
+    </div>
+</nav>
+<!-- Content Container -->
+<nav class="navbar bg-body-tertiary">
+    <div class="container-fluid">
+        <form class="d-flex" id="weatherSearchForm" role="search">
+            <input class="form-control me-2" type="search" id="locationInput" placeholder="Search" aria-label="Search">
+            <button class="btn btn-secondary" style="color: cornflowerblue" type="submit">Find</button>
+        </form>
+    </div>
+</nav>
+<div class="row g-2">
+    <div class="col">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title" id="date1"></h5>
+                <p class="card-text" id="minTemp1"></p>
+                <p class="card-text" id="maxTemp1"></p>
+                <p class="card-text" id="description1"></p>
+                <p class="card-text" id="humidity1"></p>
+                <p class="card-text" id="wind1"></p>
+                <p class="card-text" id="pressure1"></p>
+
+            </div>
+        </div>
+    </div>
+    <div class="col">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title" id="date2"></h5>
+                <p class="card-text" id="minTemp2"></p>
+                <p class="card-text" id="maxTemp2"></p>
+                <p class="card-text" id="description2"></p>
+                <p class="card-text" id="humidity2"></p>
+                <p class="card-text" id="wind2"></p>
+                <p class="card-text" id="pressure2"></p>
+
+            </div>
+        </div>
+    </div>
+    <div class="col">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title" id="date3"></h5>
+                <p class="card-text" id="minTemp3"></p>
+                <p class="card-text" id="maxTemp3"></p>
+                <p class="card-text" id="description3"></p>
+                <p class="card-text" id="humidity3"></p>
+                <p class="card-text" id="wind3"></p>
+                <p class="card-text" id="pressure3"></p>
+
+            </div>
+        </div>
+    </div>
+    <div class="col">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title" id="date4"></h5>
+                <p class="card-text" id="minTemp4"></p>
+                <p class="card-text" id="maxTemp4"></p>
+                <p class="card-text" id="description4"></p>
+                <p class="card-text" id="humidity4"></p>
+                <p class="card-text" id="wind4"></p>
+                <p class="card-text" id="pressure4"></p>
+
+            </div>
+        </div>
+    </div>
+    <div class="col">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title" id="date5"></h5>
+                <p class="card-text" id="minTemp5"></p>
+                <p class="card-text" id="maxTemp5"></p>
+                <p class="card-text" id="description5"></p>
+                <p class="card-text" id="humidity5"></p>
+                <p class="card-text" id="wind5"></p>
+                <p class="card-text" id="pressure5"></p>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="forecast"></div>
+
+<div id='map'></div>
+<script>
+    mapboxgl.accessToken = "pk.eyJ1IjoiamVubmlmZXJsYSIsImEiOiJjbG80b2diMDMwM2diMm1sbWFveWtpbDY3In0.L9ygQztWL1Y61drKc2eBiQ";
+    let map = new mapboxgl.Map({
+        container: 'map',
+        style: 'mapbox://styles/mapbox/light-v11',
+        center: [0, 0],
+        zoom: 0,
+        projection: 'globe'
+    });
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+<script src="js/keys.js"></script>
+<script src="js/weather.js"></script>
+</body>
+</html>

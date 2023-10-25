@@ -1,0 +1,40 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+html,body {
+    height: 100%;
+    margin:0;
+    padding: 0;
+}
+
+#map { position: absolute;
+    bottom: 0;
+    width:100%;
+    height:37%;
+    margin: auto;
+}
+
+.container-fluid{
+    color: white;
+}
+.city-name {
+    text-align: right;
+    color: cornflowerblue;
+}
+
+ .card {
+     margin-bottom: 20%;
+ }
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-gap: 20px;
+}
