@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Modules Exercise</title>
+</head>
+<body>
+<!--This line creates a form with the id "greetingForm". The id attribute is used to uniquely identify the form in the HTML document, which can be useful when you want to style the form with CSS or manipulate it with JavaScript-->
+<form id="greetingForm">
+    <!--This line creates a label for the input field. The for attribute in the label tag is used to associate the label with the input field that has the same id-->
+    <label for="name">Name:</label><br>
+    <!--This line creates a text input field with the id and name both set to "name". The type attribute specifies the kind of input field to display. In this case, it's a text field-->
+    <input type="text" id="name" name="name"><br>
+    <!--This line creates a submit button for the form. The type attribute is set to "submit", which means that when this button is clicked, the form data will be sent for processing-->
+    <input type="submit" value="Submit">
+</form>
+<div id="greeting"></div>
+<script type="module" src="js/greeting-control.js"></script>
+</body>
+</html>
