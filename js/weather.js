@@ -56,7 +56,7 @@ function dateFromTimeStamp(timeStamp){
 // JavaScript
 mapboxgl.accessToken = "pk.eyJ1IjoiamVubmlmZXJsYSIsImEiOiJjbG80b2diMDMwM2diMm1sbWFveWtpbDY3In0.L9ygQztWL1Y61drKc2eBiQ";
 
-const apiKey = "f55f6cb98fbc11331b674ec0aa9c33e5";
+const apiKey = "OPENWEATHER_API_KEY";
 
 function displayForecast(forecast) {
 
